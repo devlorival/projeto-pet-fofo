@@ -1,0 +1,46 @@
+var currentImgIndex=1;
+var currentImgIndex2=1;
+var currentImgIndex3=1;
+
+var ImgSrcArray = [ //caminho das imgs aqui
+'../imagens/cats/cat1.jpg','../imagens/cats/cat2.jpg','../imagens/cats/cat3.jpg',
+];
+
+/*
+'../imagens/cats/cat3.jpg','../imagens/cats/cat4.jpg','../imagens/cats/cat5.jpg','../imagens/cats/cat6.jpg','../imagens/cats/cat7.jpg','../imagens/cats/cat8.jpg','../imagens/cats/cat9.jpg','../imagens/cats/cat10.jpg','../imagens/cats/cat11.jpg','../imagens/cats/cat12.jpg','../imagens/cats/cat13.jpg','../imagens/cats/cat14.jpg','../imagens/cats/cat15.jpg','../imagens/cats/cat16.jpg','../imagens/cats/cat17.jpg','../imagens/cats/cat18.jpg','../imagens/cats/cat19.jpg','../imagens/cats/cat20.jpg',
+*/
+
+var ImgSrcArray2 = [ //caminho das imgs aqui
+'../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/','../imagens/dogs/',
+];
+var ImgSrcArray3 = [
+'',
+];
+
+
+function trocarDog(){
+    if(currentImgIndex2 == ImgSrcArray2.length) //reseta quando o contatador for igual ao tamanho da array e volta a 1° img
+    {
+      currentImgIndex2=0;
+    }
+    document.getElementById("dogs").src=ImgSrcArray2[currentImgIndex2]; //altera a img do elemento "teste" de acordo com o id
+      currentImgIndex2++; // incrementa a referencia
+}
+
+function trocarCat(){
+  if(currentImgIndex == ImgSrcArray.length) //reseta quando o contatador for igual ao tamanho da array e volta a 1° img
+  {
+    currentImgIndex=0;
+  }
+  document.getElementById("cats").src=ImgSrcArray[currentImgIndex]; //altera a img do elemento "teste" de acordo com o id
+    currentImgIndex++; // incrementa a referencia
+}
+
+function trocarCavalo(){
+  if(currentImgIndex3 == ImgSrcArray3.length) //reseta quando o contatador for igual ao tamanho da array e volta a 1° img
+  {
+    currentImgIndex3=0;
+  }
+  document.getElementById("horse").src=ImgSrcArray3[currentImgIndex3]; //altera a img do elemento "teste" de acordo com o id
+    currentImgIndex3++; // incrementa a referencia
+}
