@@ -3,7 +3,7 @@ var currentImgIndex2=1;
 var currentImgIndex3=1;
 
 var ImgSrcArray = [ //caminho das imgs aqui
-'../imagens/cats/cat1.jpg','../imagens/cats/cat2.jpg','../imagens/cats/cat3.jpg',
+'cat1.jpg','cat2.jpg','cat3.jpg',
 ];
 
 /*
